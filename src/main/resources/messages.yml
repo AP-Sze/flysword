@@ -1,0 +1,85 @@
+# 飛劍系統訊息配置文件
+
+# 通用訊息
+general:
+  prefix: "§6[飛劍] "
+  no_permission: "§c您沒有權限執行此操作！"
+  player_only: "§c此指令只能由玩家執行！"
+  player_not_found: "§c找不到玩家: {player}"
+  invalid_argument: "§c無效的參數！"
+
+# 飛行相關訊息
+flight:
+  start: "§a§l飛劍模式已啟動！"
+  stop: "§c§l飛劍模式已關閉！"
+  already_flying: "§e您已經在飛行中了！"
+  not_flying: "§e您目前沒有在飛行！"
+  durability_low: "§e飛劍耐久度不足，無法啟動飛行！"
+  durability_depleted: "§c飛劍耐久度耗盡，自動停止飛行！"
+  max_height: "§e已達到最大飛行高度！"
+  min_height: "§e已達到最小飛行高度！"
+
+# 皮膚相關訊息
+skins:
+  unlocked: "§a§l恭喜！您解鎖了新皮膚: {skin}"
+  already_unlocked: "§e您已經擁有此皮膚了！"
+  selected: "§a已選擇皮膚: {skin}"
+  not_unlocked: "§c您尚未解鎖此皮膚！"
+  not_found: "§c找不到皮膚: {skin}"
+  list_header: "§6§l=== 已解鎖皮膚 ==="
+  list_item: "§7- {name} ({id})"
+  unlock_item_used: "§a使用了解鎖道具，獲得皮膚: {skin}"
+
+# 附魔相關訊息
+enchants:
+  applied: "§a已應用附魔: {enchant} 等級 {level}"
+  removed: "§c已移除附魔: {enchant}"
+  max_level: "§e附魔已達到最大等級！"
+  not_found: "§c找不到附魔: {enchant}"
+  list_header: "§6§l=== 附魔列表 ==="
+  list_item: "§7- {name}: {level}/{max_level}"
+
+# 指令相關訊息
+commands:
+  help_header: "§6§l=== 飛劍系統指令 ==="
+  help_player: "§e/flysword menu §7- 打開皮膚選單"
+  help_select: "§e/flysword select <皮膚ID> §7- 選擇皮膚"
+  help_info: "§e/flysword info §7- 查看個人資訊"
+  help_admin_reload: "§c/flysword reload §7- 重新載入插件"
+  help_admin_give: "§c/flysword give <玩家> [皮膚ID] §7- 給予飛劍"
+  help_admin_unlock: "§c/flysword unlock <玩家> <皮膚ID> §7- 解鎖皮膚"
+  help_admin_list: "§c/flysword list §7- 列出所有皮膚"
+  usage_give: "§c用法: /flysword give <玩家> [皮膚ID]"
+  usage_unlock: "§c用法: /flysword unlock <玩家> <皮膚ID>"
+  usage_select: "§c用法: /flysword select <皮膚ID>"
+  reload_success: "§a插件配置已重新載入！"
+  give_success: "§a已給予 {player} 一把飛劍 (皮膚: {skin})"
+  give_received: "§a您收到了一把飛劍！"
+
+# 個人資訊訊息
+info:
+  header: "§6§l=== 飛劍資訊 ==="
+  current_skin: "§e當前皮膚: §7{skin}"
+  durability: "§e耐久度: §7{durability}%"
+  flight_status: "§e飛行狀態: §7{status}"
+  unlocked_skins: "§e已解鎖皮膚:"
+  enchant_levels: "§e附魔等級:"
+  skin_item: "§7- {name} ({id})"
+  enchant_item: "§7- {enchant}: {level}"
+
+# 特效訊息
+effects:
+  flight_start: "§a§l⚡ 飛劍啟動！"
+  flight_stop: "§c§l💨 飛劍停止！"
+  skin_unlock: "§a§l✨ 皮膚解鎖！"
+  enchant_activate: "§b§l🔮 附魔激活！"
+
+# 錯誤訊息
+errors:
+  config_load: "§c配置文件載入失敗！"
+  data_save: "§c數據保存失敗！"
+  data_load: "§c數據載入失敗！"
+  skin_load: "§c皮膚載入失敗！"
+  enchant_load: "§c附魔載入失敗！"
+  flight_start: "§c飛行啟動失敗！"
+  flight_stop: "§c飛行停止失敗！"

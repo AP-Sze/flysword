@@ -1,0 +1,67 @@
+# 飛劍皮膚配置文件
+# customModelData: 0 = 使用原版模型，>0 = 使用自定義模型（需要資源包）
+
+skins:
+  default:
+    displayName: "默認飛劍"
+    description: "經典的鑽石劍外觀"
+    customModelData: 0  # 使用原版鑽石劍模型
+    modelPath: "default"
+    unlockType: "default"
+    unlockValue: ""
+  
+  fire:
+    displayName: "烈焰飛劍"
+    description: "燃燒著熊熊火焰的神劍"
+    customModelData: 2
+    modelPath: "fire_sword"
+    unlockType: "item"
+    unlockValue: "fire_sword_unlock"
+  
+  ice:
+    displayName: "寒冰飛劍"
+    description: "散發著凜冽寒氣的冰劍"
+    customModelData: 3
+    modelPath: "ice_sword"
+    unlockType: "item"
+    unlockValue: "ice_sword_unlock"
+  
+  lightning:
+    displayName: "雷電飛劍"
+    description: "纏繞著閃電的雷神之劍"
+    customModelData: 4
+    modelPath: "lightning_sword"
+    unlockType: "vip"
+    unlockValue: "lightning_sword"
+  
+  dragon:
+    displayName: "龍魂飛劍"
+    description: "蘊含龍族力量的傳說之劍"
+    customModelData: 5
+    modelPath: "dragon_sword"
+    unlockType: "achievement"
+    unlockValue: "kill_ender_dragon"
+  
+  crystal:
+    displayName: "水晶飛劍"
+    description: "由純淨水晶打造的美麗之劍"
+    customModelData: 6
+    modelPath: "crystal_sword"
+    unlockType: "shop"
+    unlockValue: "crystal_sword"
+  
+  shadow:
+    displayName: "暗影飛劍"
+    description: "來自深淵的黑暗之劍"
+    customModelData: 7
+    modelPath: "shadow_sword"
+    unlockType: "event"
+    unlockValue: "halloween_event"
+  
+  rainbow:
+    displayName: "彩虹飛劍"
+    description: "散發七彩光芒的夢幻之劍"
+    customModelData: 8
+    modelPath: "rainbow_sword"
+    unlockType: "vip"
+    unlockValue: "rainbow_sword"

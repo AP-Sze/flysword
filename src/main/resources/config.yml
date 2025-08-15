@@ -1,0 +1,151 @@
+# 飛劍系統主配置文件
+
+# 飛行設定
+flight:
+  # 劍的位置偏移 (相對於玩家位置)
+  sword_offset:
+    x: 0.0   # 左右偏移 (負值=左, 正值=右) - 設為0讓盔甲架在玩家正下方
+    y: -2.0  # 上下偏移 (負值=下, 正值=上) - 在玩家腳下
+    z: 0.0   # 前後偏移 (負值=後, 正值=前)
+    # 使用 /swordpos 指令來調整位置
+  
+  # 飛劍角度設定 (以度為單位)
+  sword_rotation:
+    x: 0     # X軸旋轉 (俯仰角)
+    y: 0     # Y軸旋轉 (偏航角)
+    z: 0     # Z軸旋轉 (翻滾角)
+    # 使用 /swordrotation 指令來調整角度
+  
+  # 智能計算系統
+  smart_calculation:
+    enabled: true         # 是否啟用智能角度計算 (推薦！)
+    update_frequency: 1   # 更新頻率 (1=每tick, 2=每2tick)
+    auto_position: true   # 自動計算位置
+    auto_rotation: true   # 自動計算角度
+    # 使用 /smartsword auto 啟用智能計算
+  
+  # 飛行速度設定
+  speed:
+    base_speed: 0.4    # 基礎飛行速度 (建議: 0.2-0.6)
+    max_speed: 1.0     # 最大飛行速度 (建議: 0.8-1.5) 
+    acceleration: 0.05 # 加速度 (建議: 0.02-0.1)
+    deceleration: 0.03 # 減速度 (建議: 0.02-0.08)
+  
+  # 冷卻時間 (毫秒)
+  cooldown_time: 2000
+  
+  # 障礙檢測距離
+  obstacle_check_distance: 3
+  
+  # 安全降落距離
+  safe_landing_distance: 2.0
+  
+  # 耐久度消耗 (每秒)
+  durability_consumption: 1
+  
+  # 最大飛行高度
+  max_height: 256
+  
+  # 最小飛行高度
+  min_height: 0
+  
+  # 強制降落延遲時間（毫秒）
+  force_landing_delay: 10000
+  
+  # Shift 鍵強制降落設定
+  shift_landing:
+    enabled: true        # 啟用 Shift 鍵強制降落功能
+    delay: 10000         # 持續按住 Shift 多少毫秒後強制降落
+    show_countdown: true # 是否顯示倒計時提示
+
+# 特效設定
+effects:
+  # 是否啟用粒子特效
+  enable_particles: true
+  
+  # 是否啟用音效
+  enable_sounds: true
+  
+  # 特效密度 (1-10)
+  particle_density: 5
+
+# 皮膚設定
+skins:
+  # 是否啟用CustomModelData
+  enable_custom_model_data: true
+  
+  # 預設皮膚設定
+  default_use_vanilla_model: true  # 預設皮膚使用原版鑽石劍模型
+  
+  # 資源包設定
+  resource_pack:
+    # 是否檢查資源包
+    check_required: false  # 預設不強制資源包，因為預設皮膚不需要
+    # 資源包下載連結（如果有）
+    download_url: ""
+    # 資源包SHA-1散列值（用於驗證）
+    hash: ""
+  
+  # 默認皮膚ID
+  default_skin: "default"
+
+# 附魔設定
+enchants:
+  # 最大附魔等級
+  max_level: 3
+  
+  # 是否啟用附魔效果
+  enable_effects: true
+
+# 解鎖道具設定
+unlock_items:
+  # 是否啟用解鎖道具系統
+  enable_unlock_items: true
+  
+  # 道具材料類型
+  item_material: "PAPER"
+
+# 數據設定
+data:
+  # 數據保存間隔 (秒)
+  save_interval: 300
+  
+  # 是否自動保存
+  auto_save: true
+
+# 權限設定
+permissions:
+  # 默認權限
+  default_permission: "flysword.use"
+  
+  # 管理員權限
+  admin_permission: "flysword.admin"
+  
+  # VIP權限
+  vip_permission: "flysword.vip"
+
+# 訊息設定
+messages:
+  prefix: "§6[飛劍] "
+  flight_start: "§a飛劍模式已啟動！"
+  flight_stop: "§c飛劍模式已關閉！"
+  durability_low: "§e飛劍耐久度不足！"
+  skin_unlocked: "§a您解鎖了新皮膚: {skin}"
+  skin_selected: "§a已選擇皮膚: {skin}"
+  no_permission: "§c您沒有權限執行此操作！"
+  cooldown_active: "§e飛行冷卻中，請等待 {time} 秒"
+  obstacle_detected: "§e前方發現障礙物，自動減速！"
+  max_height_reached: "§e已達到最大飛行高度！"
+  min_height_reached: "§e已達到最小飛行高度！"
+  safe_landing_searching: "§e正在尋找安全降落點..."
+
+# 調試設定
+debug:
+  # 是否啟用測試指令
+  enable_test_commands: false
+  
+  # 是否啟用詳細日誌
+  verbose_logging: false
+  
+  # 是否啟用性能監控
+  performance_monitoring: false

@@ -1,0 +1,76 @@
+name: FlySword
+version: '1.0.0'
+main: com.bird.flysword.Flysword
+api-version: '1.21'
+description: '一個功能豐富的飛劍系統，支持多皮膚、附魔效果和三維飛行體驗'
+author: Bird
+website: https://github.com/bird/flysword
+
+commands:
+  flysword:
+    description: 飛劍系統指令
+    usage: /flysword [reload|give|unlock|list|menu|select|info]
+    permission: flysword.use
+  flyswordtest:
+    description: 飛劍系統測試指令
+    usage: /flyswordtest [test|setup|cleanup]
+    permission: flysword.admin
+  flyswordmodel:
+    description: 飛劍模型測試指令
+    usage: /flyswordmodel [spawn|clear|info|give] [皮膚ID]
+    permission: flysword.admin
+  flysword-test:
+    description: 飛行系統調試指令
+    usage: /flysword-test [give|check|flight|info|durability|repair|height|testlimits]
+    permission: flysword.admin
+  modeltest:
+    description: 模型顯示測試指令
+    usage: /modeltest [test|give|spawn|clear]
+    permission: flysword.admin
+  durabilitytest:
+    description: 耐久度測試指令
+    usage: /durabilitytest [check|set|damage|repair]
+    permission: flysword.admin
+  speedtest:
+    description: 飛行速度測試指令
+    usage: /speedtest [info|test|config|reload]
+    permission: flysword.admin
+  swordpos:
+    description: 飛劍位置調整指令
+    usage: /swordpos [show|set|reset|test|save|reload]
+    permission: flysword.admin
+  swordrotation:
+    description: 飛劍角度調整指令
+    usage: /swordrotation [show|set|preset|reset|test|save|reload]
+    permission: flysword.admin
+  shiftlandingtest:
+    description: 測試 Shift 強制降落功能
+    usage: /shiftlandingtest [info|enable|disable|test]
+    permission: flysword.admin
+    permission-message: 你沒有權限使用這個指令！
+  sworddisplaytest:
+    description: 測試飛劍顯示系統
+    usage: /sworddisplaytest [info|test|presets|cycle|reset]
+    permission: flysword.admin
+    permission-message: 你沒有權限使用這個指令！
+  armorstandtest:
+    description: 測試盔甲座固定功能
+    usage: /armorstandtest [info|test|stress|movement|rotation]
+    permission: flysword.admin
+    permission-message: 你沒有權限使用這個指令！
+  smartsword:
+    description: 智能飛劍數學計算系統
+    usage: /smartsword [auto|manual|preset|calculate|test|info]
+    permission: flysword.admin
+    permission-message: 你沒有權限使用這個指令！
+
+permissions:
+  flysword.admin:
+    description: 管理員權限
+    default: op
+  flysword.use:
+    description: 使用飛劍系統
+    default: true
+  flysword.vip:
+    description: VIP權限
+    default: false
