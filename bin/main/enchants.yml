@@ -1,0 +1,32 @@
+# 飛劍附魔配置文件
+
+enchants:
+  speed:
+    displayName: "飛行加速"
+    description: "提升飛行速度"
+    maxLevel: 3
+    effectPerLevel: 0.2
+  
+  regen:
+    displayName: "能量回復"
+    description: "飛行時自動回復耐久度"
+    maxLevel: 3
+    effectPerLevel: 0.1
+  
+  efficiency:
+    displayName: "效率提升"
+    description: "減少耐久度消耗"
+    maxLevel: 3
+    effectPerLevel: 0.1
+  
+  stealth:
+    displayName: "隱身飛行"
+    description: "飛行時減少粒子特效，更隱蔽"
+    maxLevel: 1
+    effectPerLevel: 1.0
+  
+  boost:
+    displayName: "爆發加速"
+    description: "短時間內大幅提升速度"
+    maxLevel: 2
+    effectPerLevel: 0.5
